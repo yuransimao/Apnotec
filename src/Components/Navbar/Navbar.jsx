@@ -28,10 +28,12 @@ export function Navbar(){
 
         if(window.scrollY >= 90){
             setHeader(true)
+            setMobile(false)
             
         }
         if(window.scrollY >= 270){
             setHeader(false)
+            
         }
         if(window.scrollY == 0){
             setHeader(false)
@@ -46,8 +48,10 @@ export function Navbar(){
             <div className={Styles.Menu}><button onClick={() => setMobile(true)}><FaBars/></button></div>
 
             <nav className={Mobile ? `${Styles.Mobile_menu}` :`${Styles.Nav}` }>
-                <div className={Styles.btnremove}><button onClick={() => setMobile(false)}><RxCross2/></button></div>
-                <div className={Styles.logo}><img src={Apnotec} alt='apnotec'/></div>
+                <div className={Styles.container}>
+                    <div className={Styles.logo}><img src={Apnotec} alt='apnotec'/></div>
+                    <div className={Styles.btnremove}><button onClick={() => setMobile(false)}><RxCross2/></button></div>
+                </div>
             <ul>
                 <li><NavLink className={activeLink} to={"/"}>Home</NavLink></li>
                 <li><NavLink className={activeLink} to={"/Portifolios"}>Portifolio</NavLink></li>
