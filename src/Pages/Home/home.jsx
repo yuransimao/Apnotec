@@ -1,7 +1,7 @@
 import Styles from "./styles.module.scss"
-import Manlaptop from "../../image/man-laptop.png"
+import Manlaptop from "../../image/imagem-1.png"
 import {HiClock} from "react-icons/hi"
-import {IoFileTrayFullSharp} from "react-icons/io"
+
 
 export function Home(){
 
@@ -23,6 +23,12 @@ export function Home(){
                 
             </form>
         </div>
+
+        <div className={Styles.wave}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#ffff" fillOpacity="1" d="M0,160L48,160C96,160,192,160,288,176C384,192,480,224,576,224C672,224,768,192,864,186.7C960,181,1056,203,1152,197.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+        </div>
     </div>
 
     <div className={Styles.Conteiner_promove}>
@@ -34,31 +40,43 @@ export function Home(){
              <li className={Styles.List}>
              <div className={Styles.List_icon}>
              <span><HiClock/></span>
-            <h3>Sucessful products</h3>
             </div>
 
-            <ul><li>Blue</li></ul>
+             
+            <div className={Styles.List_text}>
+                <h3>Sucessful products</h3>
+                
+                <ul className={Styles.subItem}><li>Blue</li></ul>
+            </div>
             </li>
 
              <li className={Styles.List}>
 
              <div className={Styles.List_icon}>
-                <span><IoFileTrayFullSharp/></span>
-                <h3>Brand identities</h3>
+             <span><HiClock/></span>
              </div>
+            
+             <div className={Styles.List_text}>
 
-            <ul><li>Black</li></ul>
+                <h3>Brand identities</h3>
+                <ul  className={Styles.subItem} ><li>Black</li></ul>
+                </div>
+
+            
             </li>
 
              <li className={Styles.List}>
 
              <div className={Styles.List_icon}>
             <span><HiClock/></span>
-            <h3>Business strategy</h3>
             </div>
 
-            <ul><li>Yellow</li></ul>
+            <div className={Styles.List_text}>
+            <h3>Business strategy</h3>
+            <ul className={Styles.subItem}><li>Yellow</li></ul>
+            </div>
             </li>
+            
 
             </ul>
         </div>
