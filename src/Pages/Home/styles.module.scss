@@ -123,6 +123,7 @@ display:flex;
 margin-bottom:9rem;
 margin-left:12rem;
 
+
 .promove_text{
 
 h1{
@@ -158,12 +159,43 @@ font-size:1.5rem;
 }
 .subItem{
     padding-top:2rem;
+    li{
+        p{
+            font-size:1.3rem;
+            line-height:2.5rem;
+        }
+    }
 }
 }
 
 }
 
 }
+}
+
+.Conteiner_promove_Card{
+    background:blue;
+    width:30%;
+    overflow:hidden;
+    border-radius:2rem;
+    transform:rotate(-4deg);
+    margin-left:26rem;
+    position:relative;
+    z-index:2;
+    img{
+        max-width:100%;
+        height:100%;
+        
+    }
+
+    &::after{
+        content:'';
+        background:rgb(39, 39, 172);
+        width:50%;
+        height:60%;
+        position:absolute;
+    z-index:1;
+    }
 }
 }
 

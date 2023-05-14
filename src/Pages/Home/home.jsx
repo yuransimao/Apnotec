@@ -1,5 +1,6 @@
 import Styles from "./styles.module.scss"
 import Manlaptop from "../../image/imagem-1.png"
+import Mulherlaptop from "../../image/Mulherlaptop.jpg"
 import {HiClock} from "react-icons/hi"
 
 
@@ -32,6 +33,7 @@ export function Home(){
     </div>
 
     <div className={Styles.Conteiner_promove}>
+
         <div  className={Styles.promove_text}>
             <h1>A new site for your <br/> agency ? its here. </h1>
 
@@ -46,7 +48,10 @@ export function Home(){
             <div className={Styles.List_text}>
                 <h3>Sucessful products</h3>
                 
-                <ul className={Styles.subItem}><li>Blue</li></ul>
+                <ul className={Styles.subItem}>
+                    <li><p>O sucesso na criação de um site envolve uma série <br/>de fatores que devem  ser cuidadosamente planejados e executados.</p>
+                    </li>
+                    </ul>
             </div>
             </li>
 
@@ -59,7 +64,9 @@ export function Home(){
              <div className={Styles.List_text}>
 
                 <h3>Brand identities</h3>
-                <ul  className={Styles.subItem} ><li>Black</li></ul>
+                <ul  className={Styles.subItem} ><li>
+                    <p>A identidade de marca é um aspecto crucial para o sucesso de um site.</p></li>
+                </ul>
                 </div>
 
             
@@ -73,12 +80,16 @@ export function Home(){
 
             <div className={Styles.List_text}>
             <h3>Business strategy</h3>
-            <ul className={Styles.subItem}><li>Yellow</li></ul>
+            <ul className={Styles.subItem}><li><p>A estratégia de negócios é um elemento fundamental para o sucesso de <br/>qualquer empresa, e isso não é diferente quando se trata de sites.</p></li></ul>
             </div>
             </li>
             
 
             </ul>
+        </div>
+
+        <div className={Styles.Conteiner_promove_Card}>
+                <img src={Mulherlaptop} alt='Mulherlaptop'/>
         </div>
     </div>
     </>
