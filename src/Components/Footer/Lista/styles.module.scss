@@ -1,0 +1,24 @@
+@import "../../../Styles/import";
+
+.Lista{
+font-family:$font-OpenSans;
+font-weight:300;
+padding-right:8rem;
+text-align: left;
+margin-bottom: 2rem;
+
+
+.active{
+font-size:1.2rem;
+font-weight: 400;
+}
+
+li{
+padding:0.3rem 0;
+font-size:1.4rem;
+line-height:2rem;
+a{
+color:white;
+}
+}
+}

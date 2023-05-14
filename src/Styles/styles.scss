@@ -1,0 +1,34 @@
+@import './import';
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    background: none;
+    list-style:none;
+    user-select:none;
+}
+
+html, body, #root{
+    height:100vh;
+    width:100vw;
+    font-family: $font-Roboto;
+    background:rgba(250, 244, 244, 0.76);
+  
+    
+}
+
+
+.App{
+    height:100%;
+    width:100%;
+}
+html{
+
+    
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}

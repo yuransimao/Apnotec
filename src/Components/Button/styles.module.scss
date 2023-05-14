@@ -1,0 +1,28 @@
+
+@import '../../Styles/import';
+    .Btn{
+    background-color:$color-btn;    
+    color:$color-white;
+    border-radius:0.5rem ;
+    padding:1rem;
+    margin:0 1rem;
+    font-size: 1.2rem;
+    cursor:pointer;
+    transition: all .6s ease-in-out;
+    &:hover{
+        filter: brightness(0.9);
+    }
+    
+    }
+    
+   .Btn_Transp{
+   
+    margin:0 1rem;
+    font-size: 1.2rem;
+    cursor:pointer;
+    transition: all .6s ease-in-out;
+
+    &:hover{
+        text-decoration: underline;
+    }
+    }
