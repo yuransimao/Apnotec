@@ -7,18 +7,17 @@
 .sectionCreactive{
 
 width: 100%;
-height: 85vh;
-display:grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-overflow:hidden;
+height: 80vh;
+display:flex;
 margin-bottom:10rem;
 background: url(../../image/fundo.jpg);
 background-size: cover;
-.sectionCreactive_text{
-margin:15rem 0 0 5rem;
-width: 100%;
 
-grid-column:2;
+.sectionCreactive_text{
+margin:8rem 0 0 5rem;
+width: 50%;
+
+
 h1{
 color:$color-gray;
 font-size:5.8rem;
@@ -36,14 +35,15 @@ line-height:2.5rem;
 }
 
 form{
-
+position:relative;
+z-index:4;
 width: 55%;
 display: flex;
 box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.363);
 border-radius: 0.4rem;
 background: white;
 input{
- min-width:80%;   
+min-width:80%;   
 line-height: 8%;
 padding-left: 1rem;
 padding-top:1.5rem;   
@@ -58,16 +58,16 @@ color:$text-color-b;
 .Btn{
 min-width:20%;
 
-    
-    background-color:$color-btn;
-    color:$color-white;
-    border-radius:0.3rem ;
-    padding:1rem ;
-    cursor: pointer;
-    transition:all .5s ease-in;
-    &:hover{
-        filter: brightness(0.9);
-    }
+
+background-color:$color-btn;
+color:$color-white;
+border-radius:0.3rem ;
+padding:1rem ;
+cursor: pointer;
+transition:all .5s ease-in;
+&:hover{
+filter: brightness(0.9);
+}
 
 }
 }
@@ -75,12 +75,12 @@ min-width:20%;
 }
 
 .sectionCreactive_image{
-   
-grid-column:1;
 
-width:70%;
+
+
+width:50%;
 height: 100%;
-text-align:center;
+
 margin-left: 4rem;
 img{
 max-width:100%;
@@ -94,13 +94,13 @@ z-index:1;
 
 
 .wave{
-    grid-column: 1/2 ;
-    min-width:100%;
-    bottom:0;
-    position:absolute;
-   
-    
-   
+
+min-width:100%;
+bottom:0;
+position:absolute;
+
+
+
 }
 
 }
@@ -148,13 +148,13 @@ h3{
 font-size:1.5rem;
 }
 .subItem{
-    padding-top:2rem;
-    li{
-        p{
-            font-size:1.3rem;
-            line-height:2.5rem;
-        }
-    }
+padding-top:2rem;
+li{
+p{
+font-size:1.3rem;
+line-height:2.5rem;
+}
+}
 }
 }
 
@@ -164,53 +164,141 @@ font-size:1.5rem;
 }
 
 .Conteiner_promove_Card{
-    background:blue;
-    width:30%;
-   
-    border-radius:2rem;
-    transform:rotate(-4deg);
-    margin-left:26rem;
-    position:relative;
-    z-index:2;
-    img{
-        max-width:100%;
-        height:100%;
-        border-radius:2rem;
-        
-        
-    }
+background:blue;
+width:30%;
 
-    &::after{
-        content:'';
-        background:rgba(0, 0, 0, 0.966);
-        min-width:45rem;
-        height:45rem;
-        position:absolute;
-        right:-2rem;
-        border-radius:2rem;
-        transform:rotate(4deg);
-    z-index:-1;
-    }
+border-radius:2rem;
+transform:rotate(-4deg);
+margin-left:26rem;
+position:relative;
+z-index:2;
+img{
+max-width:100%;
+height:100%;
+border-radius:2rem;
+
+
+}
+
+&::after{
+content:'';
+background:rgba(0, 0, 0, 0.966);
+min-width:45rem;
+height:45rem;
+position:absolute;
+right:-2rem;
+border-radius:2rem;
+transform:rotate(4deg);
+z-index:-1;
+}
+}
+}
+
+
+@media(max-width:1000px){
+.sectionCreactive{
+.sectionCreactive_text{
+
+p{
+width:80%;
+}
+h1{
+color:$color-gray;
+font-size:5rem;
+
+}
+
+form{
+width:80%;
+}
+
 }
 }
 
+}
+@media(max-width:906px){
+.sectionCreactive{
+.sectionCreactive_text{
+p{
+width:80%;
+}
+h1{
+color:$color-gray;
+font-size:4rem;
 
-@media(max-width:1427px){
+}
 
+form{
+width:80%;
+}
+
+}
+}
+
+}
+
+
+@media(max-width:750px){
+.sectionCreactive{
+display:block;
+height: 80vh;
+.sectionCreactive_text{
+
+margin-left:25rem;
+p{
+width:100%;
+}
+
+form{
+width:100%;
+}
+
+}
+
+.sectionCreactive_image{
+
+width:35%;
+height:35%;
+}
+
+}
+
+}
+
+@media(max-width:620px){
 .sectionCreactive{
 
+h1{
 
-
-
-
-.sectionCreactive_image::before{
-    content:"";
-   
-    left:calc(100% - 200rem);
-    
+margin-bottom: 2rem;
 }
+p{
+
+margin-bottom: 1rem;
 }
+.sectionCreactive_text{
+margin-left:20rem;
+
 }
+
+.sectionCreactive_image{
+
+width:50%;
+height:35%;
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
